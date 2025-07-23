@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+/* shared styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container-2 {
+  max-width: 1140px;
+}
+
+.nav-font-color {
+  color: #8987a1;
+}
+.nav-font-home {
+  color: #252432;
+  font-weight: 700;
+}
+.nav-cart {
+  color: black;
+}
+
+.text-primary {
+  color: #e95a08;
+}
+
+.text-grey {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-size: 1.38rem;
+}
+.body-bg {
+  background-color: #f5f8ff;
+}
+/* navber related styles */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+nav img {
+  width: 110px;
+  height: 70px;
+}
+
+/* banner */
+
+.banner {
+  display: flex;
+  margin: 120px auto;
+  align-items: center;
+}
+
+.banner .title {
+  font-size: 4.06rem;
+  font-weight: bold;
+}
+.banner p {
+  margin-top: 15px;
+  max-width: 100%;
+}
+.banner-left {
+  flex: 1;
+  padding-top: 90px;
+}
+.banner-right {
+  flex: 1;
+}
+.banner-right img {
+  display: block;
+  width: 100%;
+
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  /* shared style */
+
+  /* .container {
+    margin: 0 10px;
+  } */
+
+  /* .container-2 {
+    margin: 0 20px;
+  } */
+
+  /* navber */
+
+  .hidden {
+    display: none;
+  }
+
+  nav {
+    margin: 20px 20px 0;
+
+    height: 45px;
+  }
+  nav ul {
+    padding-bottom: 40px;
+  }
+
+  nav img {
+    width: 90px;
+    height: 50px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    margin: 30px auto;
+  }
+
+  .banner-right img {
+    /* display: block; */
+    width: 100%;
+
+    margin-top: 30px;
+    margin-left: 1px;
+  }
+
+  .banner-left {
+    flex: 1;
+    padding-top: 30px;
+    margin: 0 20px;
+  }
+
+  .banner .title {
+    font-size: 1.5rem;
+  }
+
+  .banner p {
+    font-size: 0.9rem;
+  }
+}
