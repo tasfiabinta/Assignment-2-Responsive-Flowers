@@ -60,6 +60,11 @@
   font-weight: 400;
   font-size: 1.38rem;
 }
+
+.text-title {
+  font-weight: bold;
+  font-size: 3.13rem;
+}
 .body-bg {
   background-color: #f5f8ff;
 }
@@ -93,10 +98,6 @@ nav img {
   height: 70px;
 }
 
-.text-title {
-  font-weight: bold;
-  font-size: 3.13rem;
-}
 /* banner */
 
 .banner {
@@ -172,14 +173,46 @@ nav img {
   font-weight: bold;
 }
 
+/* Flower and plants lover section */
+
+.flower-store {
+  display: flex;
+  margin: 220px auto;
+  position: relative;
+  gap: 70px;
+}
+
+.store-img {
+  width: 100%;
+  height: 100%;
+}
+
+.store-badge {
+  width: 25%;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-70%, -50%);
+}
+.store-left {
+}
+.store-right {
+  margin: 30px auto;
+}
+.store-list {
+  margin-left: 15px;
+}
+.store-right ul li {
+  margin: 20px;
+  padding-right: 40px;
+}
+
 @media screen and (max-width: 576px) {
   /* shared style */
-
-  /* navber */
-
   .hidden {
     display: none;
   }
+  /* navber */
 
   nav {
     margin: 20px 20px 0;
@@ -249,5 +282,30 @@ nav img {
 
   .plants-title {
     padding-top: 30px;
+  }
+
+  /* Flower and plants lover  */
+
+  .flower-store {
+    flex-direction: column;
+    margin: 40px 20px;
+  }
+  .store-img img {
+    width: 100%;
+  }
+  .store-right {
+    margin-top: -40px;
+  }
+  .store-title {
+    font-size: 1.5rem;
+    /* padding-bottom: 20px; */
+  }
+  .store-list {
+    font-size: 1rem;
+  }
+
+  .store-right ul li {
+    margin: 10px;
+    padding-right: 0;
   }
 }
