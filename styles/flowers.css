@@ -52,12 +52,17 @@
 .body-bg {
   background-color: #f5f8ff;
 }
+
+.text-center {
+  text-align: center;
+}
 /* navber related styles */
 
 nav {
   display: flex;
   justify-content: space-between;
   margin: 30px auto;
+  /* border: 1px solid black; */
 }
 
 nav ul {
@@ -77,6 +82,10 @@ nav img {
   height: 70px;
 }
 
+.text-title {
+  font-weight: bold;
+  font-size: 3.13rem;
+}
 /* banner */
 
 .banner {
@@ -96,6 +105,7 @@ nav img {
 .banner-left {
   flex: 1;
   padding-top: 90px;
+  /* border: 1px solid blue; */
 }
 .banner-right {
   flex: 1;
@@ -105,6 +115,35 @@ nav img {
   width: 100%;
 
   margin-top: 30px;
+}
+
+/* our plant related style */
+
+.our-plant {
+  border: 1px solid black;
+  margin: 120px auto;
+}
+
+.our-plant p {
+  padding: 10px 20px;
+  margin: 10px 110px 40px;
+}
+.our-plant h2 {
+  padding-right: 190px;
+}
+
+.our-plan-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.our-plan-bottom .card img {
+  width: 100%;
+}
+
+.card-body {
+  text-align: center;
 }
 
 @media screen and (max-width: 576px) {
@@ -143,8 +182,7 @@ nav img {
   }
 
   .banner-right img {
-    /* display: block; */
-    width: 100%;
+    display: block;
 
     margin-top: 30px;
     margin-left: 1px;
