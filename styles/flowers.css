@@ -20,10 +20,10 @@
   font-style: normal;
 }
 
-.container {
+/* .container {
   max-width: 1440px;
   margin: 0 auto;
-}
+} */
 
 .container-2 {
   max-width: 1140px;
@@ -42,6 +42,17 @@
 
 .text-primary {
   color: #e95a08;
+}
+
+.btn {
+  background-color: #e95a08;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  width: 100%;
+
+  padding: 20px 20px;
 }
 
 .text-grey {
@@ -120,7 +131,6 @@ nav img {
 /* our plant related style */
 
 .our-plant {
-  border: 1px solid black;
   margin: 120px auto;
 }
 
@@ -132,30 +142,38 @@ nav img {
   padding-right: 190px;
 }
 
-.our-plan-bottom {
+.our-plants-bottom {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-.our-plan-bottom .card img {
+.our-plants-bottom .plants-card img {
   width: 100%;
 }
+.plants-card {
+  background-color: #ffffffcf;
+}
 
-.card-body {
+.plants-card-body {
   text-align: center;
+}
+
+.plants-title {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 1.38rem;
+}
+
+.plants-price {
+  padding-bottom: 30px;
+  font-size: 1.38rem;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 576px) {
   /* shared style */
-
-  /* .container {
-    margin: 0 10px;
-  } */
-
-  /* .container-2 {
-    margin: 0 20px;
-  } */
 
   /* navber */
 
@@ -182,10 +200,9 @@ nav img {
   }
 
   .banner-right img {
-    display: block;
-
     margin-top: 30px;
-    margin-left: 1px;
+
+    width: 100%;
   }
 
   .banner-left {
@@ -199,6 +216,38 @@ nav img {
   }
 
   .banner p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+
+  /* plants section */
+
+  .our-plant {
+    margin: 70px auto;
+  }
+  .our-plant h2 {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+
+  .our-plant p {
+    padding: 0 20px;
+    margin: 10px 10px 30px;
+    font-size: 1rem;
+  }
+  .our-plants-bottom {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 20px;
+  }
+  .our-plants-bottom .plants-card img {
+    width: 100%;
+  }
+
+  .plants-price {
+    padding-bottom: 40px;
+  }
+
+  .plants-title {
+    padding-top: 30px;
   }
 }
