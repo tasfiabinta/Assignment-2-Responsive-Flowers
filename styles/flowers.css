@@ -20,10 +20,10 @@
   font-style: normal;
 }
 
-/* .container {
+.container {
   max-width: 1440px;
   margin: 0 auto;
-} */
+}
 
 .container-2 {
   max-width: 1140px;
@@ -178,7 +178,7 @@ nav img {
 .flower-store {
   display: flex;
   margin: 220px auto;
-  position: relative;
+  /* position: relative; */
   gap: 70px;
 }
 
@@ -187,14 +187,25 @@ nav img {
   height: 100%;
 }
 
-.store-badge {
-  width: 25%;
+.badge {
+  width: 300px;
+  height: 300px;
+
   position: absolute;
-  left: 50%;
-  top: 0%;
+  left: 103%;
+  top: 2%;
   transform: translate(-70%, -50%);
 }
+
+.store-badge {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.466));
+  display: block;
+}
 .store-left {
+  position: relative;
 }
 .store-right {
   margin: 30px auto;
@@ -205,6 +216,39 @@ nav img {
 .store-right ul li {
   margin: 20px;
   padding-right: 40px;
+}
+
+/* Latest Deal Section */
+
+.latest-deal {
+  text-align: center;
+}
+
+/* Joint section */
+
+.joint {
+  background-image: url(../assets/news-letter-bg.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.joint-container {
+  width: 830px;
+  text-align: center;
+  border: 1px solid black;
+}
+.joint-container h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.joint-container .input {
+  text-align: center;
 }
 
 @media screen and (max-width: 576px) {
