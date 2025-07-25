@@ -249,6 +249,7 @@ nav img {
   align-items: center;
   height: 200px;
   border-radius: 14px;
+  background-size: cover;
 }
 
 .ana {
@@ -260,6 +261,7 @@ nav img {
   align-items: center;
   height: 200px;
   border-radius: 14px;
+  background-size: cover;
 }
 
 .zabo {
@@ -271,8 +273,9 @@ nav img {
   align-items: center;
   height: 200px;
   border-radius: 14px;
-  flex: 1;
+  width: 753px;
   height: 420px;
+  background-size: cover;
 }
 .bloom h5,
 .ana h5 {
@@ -584,5 +587,62 @@ nav img {
 
   #twitter {
     padding-top: 10px;
+  }
+
+  /* latest deals section */
+
+  .latest-deal-top {
+    margin: 40px auto 0;
+  }
+
+  .latest-deal-top h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  .latest-deal-top p {
+    margin: 5px 10px 0;
+    padding: 0 35px;
+    font-size: 0.9rem;
+  }
+  .latest-deal-bottom {
+    margin: 50px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bloom {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6)),
+      url(../assets/deal-bloom.png);
+    width: 100%;
+  }
+
+  .ana {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6)),
+      url(../assets/deal-ana.png);
+    width: 100%;
+
+    border-radius: 14px 0 0 5px;
+  }
+
+  .zabo {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6)),
+      url(../assets/deal-zabo.png);
+    width: 100%;
+
+    border-radius: 14px;
+
+    height: 180px;
+  }
+
+  .zabo h4 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+  }
+
+  .zabo a {
+    padding-left: 70px;
+
+    font-size: 1rem;
   }
 }
